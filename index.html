@@ -20,18 +20,18 @@
 
   <!-- Ramen Details -->
   <div id="ramen-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
+    <img id="detailImage" class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+    <h2 id="ramenName" class="name"></h2>
+    <h3 id="restaurantName" class="restaurant"></h3>
   </div>
 
   <h3>Rating:</h3>
   <p>
-    <span id='rating-display'>Insert rating here</span> / 10
+    <span id='rating-display'></span> / 10
   </p>
   <h3>Comment:</h3>
   <p id='comment-display'>
-    Insert comment here
+
   </p>
 
   <!-- New Ramen Form -->
@@ -49,6 +49,17 @@
     <textarea name="new-comment" id="new-comment"></textarea>
     <input type="submit" value="Create" />
   </form>
+
+  <form id="edit-ramen">
+    <h4>Update the Featured Ramen</h4>
+    <label for="rating">Rating: </label>
+    <input type="number" name="rating" id="edit-rating" />
+    <label for="new-comment">Comment: </label>
+    <textarea name="new-comment" id="edit-comment"></textarea>
+    <input type="submit" value="Update" />
+  </form>
+
+  <button id="deleteRamen">Delete Selected Ramen</button>
 
 </body>
 
